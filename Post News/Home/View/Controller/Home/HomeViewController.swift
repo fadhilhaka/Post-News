@@ -19,7 +19,7 @@ final class HomeViewController: UIViewController {
     var albumList: AlbumList = []
     var photoList: PhotoList = []
     
-    private lazy var refreshControl: UIRefreshControl = {
+    lazy var refreshControl: UIRefreshControl = {
         let refreshControl = UIRefreshControl()
             refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
         return refreshControl
@@ -129,7 +129,7 @@ extension HomeViewController: PostViewControllerDelegate {
                 }
             }
         } else {
-            completion(nil, "Comment is empty")
+            completion(self.commentList, nil)
         }
     }
 }

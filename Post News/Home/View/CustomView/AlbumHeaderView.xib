@@ -17,10 +17,17 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Igw-KH-zQn" userLabel="Container View">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKT-YO-15l">
-                            <rect key="frame" x="16" y="11.5" width="33.5" height="21"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jDq-Yu-1Vv" userLabel="Separator View">
+                            <rect key="frame" x="16" y="0.0" width="288" height="1"/>
+                            <color key="backgroundColor" systemColor="systemGray5Color"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="21" id="RAY-qz-aTW"/>
+                                <constraint firstAttribute="height" constant="1" id="qCU-dc-6YL"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKT-YO-15l">
+                            <rect key="frame" x="16" y="11.5" width="288" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="RAY-qz-aTW"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                             <nil key="textColor"/>
@@ -29,8 +36,12 @@
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstItem="hKT-YO-15l" firstAttribute="centerY" secondItem="Igw-KH-zQn" secondAttribute="centerY" id="ATC-vy-5Zu"/>
+                        <constraint firstItem="hKT-YO-15l" firstAttribute="top" secondItem="Igw-KH-zQn" secondAttribute="top" constant="11.5" id="G7k-Ro-MmS"/>
                         <constraint firstItem="hKT-YO-15l" firstAttribute="leading" secondItem="Igw-KH-zQn" secondAttribute="leading" constant="16" id="W65-h7-ogB"/>
+                        <constraint firstAttribute="trailing" secondItem="jDq-Yu-1Vv" secondAttribute="trailing" constant="16" id="ekF-nD-VCP"/>
+                        <constraint firstItem="jDq-Yu-1Vv" firstAttribute="leading" secondItem="Igw-KH-zQn" secondAttribute="leading" constant="16" id="i0Q-vo-TaR"/>
+                        <constraint firstItem="jDq-Yu-1Vv" firstAttribute="top" secondItem="Igw-KH-zQn" secondAttribute="top" id="qiL-1Z-qPd"/>
+                        <constraint firstAttribute="trailing" secondItem="hKT-YO-15l" secondAttribute="trailing" constant="16" id="sWQ-od-haE"/>
                     </constraints>
                 </view>
             </subviews>
@@ -42,6 +53,7 @@
                 <constraint firstAttribute="top" secondItem="Igw-KH-zQn" secondAttribute="top" id="uCW-sG-fJ7"/>
             </constraints>
             <connections>
+                <outlet property="separatorView" destination="jDq-Yu-1Vv" id="1ES-Ps-iHe"/>
                 <outlet property="titleLabel" destination="hKT-YO-15l" id="mK3-0X-esY"/>
             </connections>
             <point key="canvasLocation" x="89.855072463768124" y="87.723214285714278"/>
@@ -50,6 +62,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -7,12 +7,21 @@
 
 import UIKit
 
+protocol AlbumCellDelegate: AnyObject {
+    func showPhotoDetail(_ title: String, _ imageStrURL: String)
+}
+
 final class AlbumCell: UICollectionViewCell {
 
     static let identifier = "AlbumCell"
     static let cellSize = CGSize(width: 60.0, height: 60.0)
     
     @IBOutlet weak var imageView: UIImageView!
+    
+    var title: String = ""
+    var imageStrURL: String = ""
+    
+    weak var delegate: AlbumCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,7 +30,11 @@ final class AlbumCell: UICollectionViewCell {
         imageView.layer.cornerRadius = 4.0
     }
 
-    func setupCell(_ thumbnailStrURL: String, imageStrURL: String) {
+    func setupCell(_ thumbnailStrURL: String, title: String, imageStrURL: String, delegate: AlbumCellDelegate) {
+        self.delegate = delegate
+        self.title = title
+        self.imageStrURL = imageStrURL
+        
         guard let imageURL = URL(string: thumbnailStrURL) else { return }
         
         downloadImage(from: imageURL) { (image, error) in
@@ -50,5 +63,9 @@ final class AlbumCell: UICollectionViewCell {
     
     func getImage(from imageURL: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
         URLSession.shared.dataTask(with: imageURL, completionHandler: completion).resume()
+    }
+    
+    @IBAction func thumbnailIsClicked(_ sender: UIButton) {
+        delegate?.showPhotoDetail(title, imageStrURL)
     }
 }

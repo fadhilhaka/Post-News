@@ -33,7 +33,7 @@
                     <rect key="frame" x="0.0" y="60" width="414" height="836"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pc5-Ke-rHy" userLabel="Drag Indicator View">
-                            <rect key="frame" x="182" y="16" width="50" height="4"/>
+                            <rect key="frame" x="182" y="8" width="50" height="4"/>
                             <color key="backgroundColor" systemColor="systemGray5Color"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="50" id="j0i-uk-oQH"/>
@@ -41,7 +41,7 @@
                             </constraints>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Detail" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cj3-XU-5Yo" userLabel="User Detail Title">
-                            <rect key="frame" x="159.5" y="36" width="95" height="20"/>
+                            <rect key="frame" x="159.5" y="28" width="95" height="20"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="20" id="40m-9W-bEF"/>
                             </constraints>
@@ -49,57 +49,57 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3nI-Rx-6gx">
-                            <rect key="frame" x="16" y="72" width="382" height="104"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="3nI-Rx-6gx">
+                            <rect key="frame" x="16" y="64" width="382" height="96"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jws-Tp-cJR" userLabel="User name">
-                                    <rect key="frame" x="0.0" y="0.0" width="382" height="20"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="382" height="19"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jmg-NL-V8Z">
-                                    <rect key="frame" x="0.0" y="28" width="382" height="20"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <rect key="frame" x="0.0" y="25" width="382" height="19"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User address" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xEy-RJ-3TE">
-                                    <rect key="frame" x="0.0" y="56" width="382" height="19.5"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <rect key="frame" x="0.0" y="50" width="382" height="19"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User company" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W4W-ZE-Ul3">
-                                    <rect key="frame" x="0.0" y="83.5" width="382" height="20.5"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <rect key="frame" x="0.0" y="75" width="382" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
                             <constraints>
-                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="104" id="qdN-u3-jod"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="96" id="qdN-u3-jod"/>
                             </constraints>
                         </stackView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WQI-id-wDm" userLabel="Separator View">
-                            <rect key="frame" x="0.0" y="191" width="414" height="1"/>
+                            <rect key="frame" x="0.0" y="175" width="414" height="1"/>
                             <color key="backgroundColor" systemColor="systemGray5Color"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="0hb-G3-Kuj"/>
                             </constraints>
                         </view>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="T6X-gD-jLZ">
-                            <rect key="frame" x="0.0" y="192" width="414" height="644"/>
+                            <rect key="frame" x="0.0" y="176" width="414" height="660"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0y8-oj-MGF">
                                 <size key="itemSize" width="128" height="128"/>
                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                 <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                <inset key="sectionInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                                <inset key="sectionInset" minX="16" minY="0.0" maxX="16" maxY="16"/>
                             </collectionViewFlowLayout>
                         </collectionView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ju-IQ-anz">
-                            <rect key="frame" x="122" y="192" width="170" height="40"/>
+                            <rect key="frame" x="122" y="176" width="170" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="170" id="dsk-T8-Klm"/>
                                 <constraint firstAttribute="height" constant="40" id="sOc-wD-nQ1"/>
@@ -124,7 +124,7 @@
                         <constraint firstItem="Cj3-XU-5Yo" firstAttribute="top" secondItem="Pc5-Ke-rHy" secondAttribute="bottom" constant="16" id="R7C-Of-8eG"/>
                         <constraint firstItem="3nI-Rx-6gx" firstAttribute="leading" secondItem="HOf-Vx-rQn" secondAttribute="leading" constant="16" id="RON-zK-ZUW"/>
                         <constraint firstAttribute="trailing" secondItem="3nI-Rx-6gx" secondAttribute="trailing" constant="16" id="TsZ-2w-Tz8"/>
-                        <constraint firstItem="Pc5-Ke-rHy" firstAttribute="top" secondItem="HOf-Vx-rQn" secondAttribute="top" constant="16" id="ael-sR-nkh"/>
+                        <constraint firstItem="Pc5-Ke-rHy" firstAttribute="top" secondItem="HOf-Vx-rQn" secondAttribute="top" constant="8" id="ael-sR-nkh"/>
                         <constraint firstItem="T6X-gD-jLZ" firstAttribute="top" secondItem="3nI-Rx-6gx" secondAttribute="bottom" constant="16" id="ces-uE-oOv"/>
                         <constraint firstItem="3nI-Rx-6gx" firstAttribute="top" secondItem="Cj3-XU-5Yo" secondAttribute="bottom" constant="16" id="j8V-3K-lYH"/>
                         <constraint firstItem="Pc5-Ke-rHy" firstAttribute="centerX" secondItem="HOf-Vx-rQn" secondAttribute="centerX" id="nxg-Hs-OH5"/>

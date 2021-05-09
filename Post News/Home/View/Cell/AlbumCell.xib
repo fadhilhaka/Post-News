@@ -17,6 +17,13 @@
                 <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rAd-vW-qDn" userLabel="Click Area">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <action selector="thumbnailIsClicked:" destination="gTV-IL-0wX" eventType="touchUpInside" id="qR2-Om-JUo"/>
+                        </connections>
+                    </button>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle.stack.person.crop" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GtW-0D-yfy">
                         <rect key="frame" x="0.0" y="-0.5" width="150" height="151"/>
                         <color key="tintColor" systemColor="systemGray5Color"/>
@@ -25,10 +32,14 @@
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
+                <constraint firstItem="rAd-vW-qDn" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="0jd-bq-7DY"/>
                 <constraint firstItem="GtW-0D-yfy" firstAttribute="trailing" secondItem="ZTg-uK-7eu" secondAttribute="trailing" id="282-9Z-hfN"/>
                 <constraint firstAttribute="bottom" secondItem="GtW-0D-yfy" secondAttribute="bottom" id="5gC-mv-O6y"/>
+                <constraint firstItem="rAd-vW-qDn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Ba5-p7-Vfg"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="rAd-vW-qDn" secondAttribute="trailing" id="I5o-hw-H4C"/>
                 <constraint firstAttribute="top" secondItem="GtW-0D-yfy" secondAttribute="top" id="UKS-d5-o77"/>
                 <constraint firstItem="ZTg-uK-7eu" firstAttribute="leading" secondItem="GtW-0D-yfy" secondAttribute="leading" id="qpo-8v-0KF"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="rAd-vW-qDn" secondAttribute="bottom" id="z1r-2Q-fFx"/>
             </constraints>
             <connections>
                 <outlet property="imageView" destination="GtW-0D-yfy" id="Prq-ng-Fn5"/>

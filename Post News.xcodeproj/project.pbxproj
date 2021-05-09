@@ -15,6 +15,8 @@
 		D258D2662647D300007D98AE /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D258D2642647D300007D98AE /* CommentCell.xib */; };
 		D258D26A2647DFE7007D98AE /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258D2682647DFE7007D98AE /* UserViewController.swift */; };
 		D258D26B2647DFE7007D98AE /* UserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D258D2692647DFE7007D98AE /* UserViewController.xib */; };
+		D262642F26489798008F99B8 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D262642D26489798008F99B8 /* PhotoViewController.swift */; };
+		D262643026489798008F99B8 /* PhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D262642E26489798008F99B8 /* PhotoViewController.xib */; };
 		D28A9F1B264785A600201679 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28A9F19264785A600201679 /* PostCell.swift */; };
 		D28A9F1C264785A600201679 /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D28A9F1A264785A600201679 /* PostCell.xib */; };
 		D28A9F2126478E0200201679 /* HomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28A9F2026478E0200201679 /* HomeConfigurator.swift */; };
@@ -64,6 +66,8 @@
 		D258D2642647D300007D98AE /* CommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
 		D258D2682647DFE7007D98AE /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		D258D2692647DFE7007D98AE /* UserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserViewController.xib; sourceTree = "<group>"; };
+		D262642D26489798008F99B8 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		D262642E26489798008F99B8 /* PhotoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoViewController.xib; sourceTree = "<group>"; };
 		D28A9F19264785A600201679 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		D28A9F1A264785A600201679 /* PostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
 		D28A9F2026478E0200201679 /* HomeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeConfigurator.swift; sourceTree = "<group>"; };
@@ -136,6 +140,15 @@
 			path = User;
 			sourceTree = "<group>";
 		};
+		D262642C26489779008F99B8 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				D262642D26489798008F99B8 /* PhotoViewController.swift */,
+				D262642E26489798008F99B8 /* PhotoViewController.xib */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
 		D27DC2EE264666E400468F2E /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				D28A9F362647B44100201679 /* Home */,
+				D262642C26489779008F99B8 /* Photo */,
 				D28A9F372647B44E00201679 /* Post */,
 				D258D2672647DF97007D98AE /* User */,
 			);
@@ -439,6 +453,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D258D26B2647DFE7007D98AE /* UserViewController.xib in Resources */,
+				D262643026489798008F99B8 /* PhotoViewController.xib in Resources */,
 				D2FDBE172646665D0052A239 /* LaunchScreen.storyboard in Resources */,
 				D2FDBE142646665D0052A239 /* Assets.xcassets in Resources */,
 				D2FDBE0F264666590052A239 /* Main.storyboard in Resources */,
@@ -488,6 +503,7 @@
 				D2FDBE0A264666590052A239 /* SceneDelegate.swift in Sources */,
 				D28A9F2C2647946400201679 /* HomeWorker.swift in Sources */,
 				D28A9F1B264785A600201679 /* PostCell.swift in Sources */,
+				D262642F26489798008F99B8 /* PhotoViewController.swift in Sources */,
 				D28A9F30264794B100201679 /* HomeRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

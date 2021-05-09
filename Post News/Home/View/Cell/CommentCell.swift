@@ -10,7 +10,6 @@ import UIKit
 final class CommentCell: UICollectionViewCell {
 
     static let identifier = "CommentCell"
-    static let cellSize = CGSize(width: UIScreen.main.bounds.width, height: 72.0)
     static func getCellSize(content: String) -> CGSize {
         let cellWidth: CGFloat = UIScreen.main.bounds.width
         let baseHeight: CGFloat = 56.0

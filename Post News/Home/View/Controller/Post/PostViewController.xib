@@ -34,7 +34,7 @@
                     <rect key="frame" x="0.0" y="60" width="414" height="836"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2qm-4H-bfm" userLabel="Drag Indicator View">
-                            <rect key="frame" x="182" y="16" width="50" height="4"/>
+                            <rect key="frame" x="182" y="8" width="50" height="4"/>
                             <color key="backgroundColor" systemColor="systemGray5Color"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="4" id="WSn-85-nXd"/>
@@ -42,7 +42,7 @@
                             </constraints>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nh1-83-sSb">
-                            <rect key="frame" x="16" y="36" width="382" height="21.5"/>
+                            <rect key="frame" x="16" y="28" width="382" height="21.5"/>
                             <constraints>
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="312-ar-5iq"/>
                             </constraints>
@@ -51,7 +51,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username from company" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeo-KB-mDt" userLabel="Username Label">
-                            <rect key="frame" x="16" y="65.5" width="160.5" height="16"/>
+                            <rect key="frame" x="16" y="57.5" width="160.5" height="16"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="16" id="eGE-mk-0VO"/>
                             </constraints>
@@ -60,7 +60,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hr9-U4-rs3" userLabel="Body Label">
-                            <rect key="frame" x="16" y="89.5" width="382" height="20"/>
+                            <rect key="frame" x="16" y="81.5" width="382" height="20"/>
                             <constraints>
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="0OO-u3-VWW"/>
                             </constraints>
@@ -69,14 +69,14 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Noz-oj-J1I" userLabel="Separator View">
-                            <rect key="frame" x="0.0" y="116.5" width="414" height="1"/>
+                            <rect key="frame" x="0.0" y="108.5" width="414" height="1"/>
                             <color key="backgroundColor" systemColor="systemGray5Color"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="y44-1N-S3i"/>
                             </constraints>
                         </view>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="jkL-0a-LrI">
-                            <rect key="frame" x="0.0" y="117.5" width="414" height="718.5"/>
+                            <rect key="frame" x="0.0" y="109.5" width="414" height="726.5"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="q4h-uC-onO">
                                 <size key="itemSize" width="128" height="128"/>
@@ -86,7 +86,7 @@
                             </collectionViewFlowLayout>
                         </collectionView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLF-dG-ahb">
-                            <rect key="frame" x="122" y="125.5" width="170" height="40"/>
+                            <rect key="frame" x="122" y="117.5" width="170" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="170" id="E7F-NC-xIq"/>
                                 <constraint firstAttribute="height" constant="40" id="jJ0-hX-2C5"/>
@@ -101,7 +101,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4wK-Zh-KxF" userLabel="Username Click Area">
-                            <rect key="frame" x="8" y="61.5" width="176.5" height="24"/>
+                            <rect key="frame" x="8" y="53.5" width="176.5" height="24"/>
                             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal">
                                 <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -121,7 +121,7 @@
                         <constraint firstAttribute="trailing" secondItem="jkL-0a-LrI" secondAttribute="trailing" id="8lF-KZ-jpM"/>
                         <constraint firstItem="JLF-dG-ahb" firstAttribute="centerX" secondItem="fQ2-br-uQf" secondAttribute="centerX" id="Dj9-Gw-UGe"/>
                         <constraint firstAttribute="bottom" secondItem="jkL-0a-LrI" secondAttribute="bottom" id="GfZ-1k-pZe"/>
-                        <constraint firstItem="2qm-4H-bfm" firstAttribute="top" secondItem="fQ2-br-uQf" secondAttribute="top" constant="16" id="HjZ-2T-2Dg"/>
+                        <constraint firstItem="2qm-4H-bfm" firstAttribute="top" secondItem="fQ2-br-uQf" secondAttribute="top" constant="8" id="HjZ-2T-2Dg"/>
                         <constraint firstItem="Hr9-U4-rs3" firstAttribute="top" secondItem="eeo-KB-mDt" secondAttribute="bottom" constant="8" id="Ju1-c5-HcB"/>
                         <constraint firstItem="nh1-83-sSb" firstAttribute="leading" secondItem="fQ2-br-uQf" secondAttribute="leading" constant="16" id="L3j-N7-ELw"/>
                         <constraint firstItem="jkL-0a-LrI" firstAttribute="leading" secondItem="fQ2-br-uQf" secondAttribute="leading" id="LI1-lH-8cC"/>

@@ -193,24 +193,33 @@ extension UserViewController: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: AlbumHeaderView.identifier, for: indexPath) as! AlbumHeaderView
-            header.setupHeader(albumList[indexPath.item].title)
+        header.setupHeader(albumList[indexPath.section].title, isFirst: indexPath.section == 0)
         return header
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let photo = photoList.filter { $0.albumID-1 == indexPath.section }[indexPath.item]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AlbumCell.identifier, for: indexPath) as! AlbumCell
-            cell.setupCell(photo.thumbnailURL, imageStrURL: photo.url)
+            cell.setupCell(photo.thumbnailURL, title: photo.title, imageStrURL: photo.url, delegate: self)
         return cell
     }
 }
 
 extension UserViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        AlbumHeaderView.headerSize
+        AlbumHeaderView.getHeaderSize(title: albumList[section].title)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         AlbumCell.cellSize
+    }
+}
+
+extension UserViewController: AlbumCellDelegate {
+    func showPhotoDetail(_ title: String, _ imageStrURL: String) {
+        let photoVC = PhotoViewController(imageTitle: title, imageStrURL: imageStrURL)
+            photoVC.modalTransitionStyle = .crossDissolve
+            photoVC.modalPresentationStyle = .overFullScreen
+        self.present(photoVC, animated: true, completion: nil)
     }
 }
