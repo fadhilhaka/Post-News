@@ -1,5 +1,9 @@
 # Post News
 
+|                        |                        |                        |                        |
+|:----------------------:|:----------------------:|:----------------------:|:----------------------:|
+| ![](images/img_1.png)  | ![](images/img_2.png)  | ![](images/img_3.png)  | ![](images/img_4.png)  |
+
 This app is built with [Clean Swift VIP](https://clean-swift.com) architecture. The display list is built with UICollectionView. This collection view register PostCell as its cell which have the appropiate UI to show from view model, PostViewModel.
 
 The View model is constructed from parsed response data that saved in coinList as Array of PostResponse.
