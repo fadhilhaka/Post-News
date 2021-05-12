@@ -22,7 +22,7 @@ Every process is based on protocol-delegate pattern.
 ## Features
 
 * Show list of user post.
-* Show user name and compoany on each post.
+* Show user name and company on each post.
 * Show post detail page.
 * Show complete post and comment list on post detail page.
 * Show photo detail page.
@@ -53,9 +53,8 @@ The app using API from: [jsonplaceholder](https://jsonplaceholder.typicode.com/)
 
 ## Built with
 
-* [Cocoapods](https://guides.cocoapods.org/using/getting-started.html) - The Cocoa Dependency Manager.
 * [Swift](https://developer.apple.com/swift/) - Swift is a powerful and intuitive programming language for macOS, iOS, watchOS, tvOS and beyond.
 
-## Intention
+<!-- ## Intention
 
-This app is built for answering Mobile Application Test from [Kumparan](https://kumparan.com) at May 7<sup>th</sup> 2021.
+This app is built for answering Mobile Application Test from [Kumparan](https://kumparan.com) at May 7<sup>th</sup> 2021. -->
